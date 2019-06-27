@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="modelo.sala" table="sala">
+  <id name="Id_Sala" column="id_sala">
+          <generator class="identity"/>
+      </id>
+      
+      <property name="Capacidad" column="capacidad" type="int"/>
+      
+      <many-to-one name="Teatro_Id_Teatro" class="modelo.teatro" fetch="select">
+        <column name="teatro_id_teatro" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

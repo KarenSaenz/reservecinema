@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="modelo.ususario" table="usuario">
+  <id name="Id_Usuario" column="id_usuario">
+          <generator class="identity"/>
+      </id>
+      
+      <property name="Nombre" column="nombre" type="string"/>
+      <property name="Apellido" column="apellido" type="string"/>
+      <property name="Contrasena" column="contrasena" type="string" />
+      <property name="Perfil" column="perfil" type="string" />
+      
+      
+  </class>
+</hibernate-mapping>

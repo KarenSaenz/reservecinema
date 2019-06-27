@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="modelo.proyeccion" table="proyecto">
+  <id name="Id_Proyeccion" column="id_proyeccion">
+          <generator class="identity"/>
+      </id>
+      
+      <property name="Fecha" column="fecha" type="date"/>
+      
+      <many-to-one name="Pelicula_Id_Pelicula" class="modelo.pelicula" fetch="select">
+        <column name="pelicula_id_pelicula" not-null="true" />
+    </many-to-one>
+      
+      <many-to-one name="Sala_Id_Sala" class="modelo.sala" fetch="select">
+        <column name="sala_id_sala" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

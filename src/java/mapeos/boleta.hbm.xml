@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="modelo.boleta" table="boleta">
+  <id name="Id_Reserva" column="id_reserva">
+          <generator class="identity"/>
+      </id>
+      
+      <property name="Nsillas" column="NSillas" type="int"/>
+      <property name="Valor_Unitario" column="valorunitario" type="int"/>
+      
+       <many-to-one name="Cliente_Id_Cliente" class="modelo.cliente" fetch="select">
+        <column name="cliente_id_cliente" not-null="true" />
+    </many-to-one>
+    
+    <many-to-one name="Usuario_Id_Usuario" class="modelo.usuario" fetch="select">
+        <column name="usuario_id_usuario" not-null="true" />
+    </many-to-one>
+    
+    <many-to-one name="Proyeccion_Id_Proyeccion" class="modelo.proyeccion" fetch="select">
+        <column name="proyeccion_id_proyeccion" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

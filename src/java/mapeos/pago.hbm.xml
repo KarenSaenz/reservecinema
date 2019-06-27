@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="modelo.pago" table="pago">
+  <id name="Id_Pago" column="id_pago">
+          <generator class="identity"/>
+      </id>
+      
+      <property name="Total" column="total" type="double"/>
+      
+       <many-to-one name="Boleta_Id_Boleta" class="modelo.bolote" fetch="select">
+        <column name="boleta_id_boleta" not-null="true" />
+    </many-to-one>
+      
+  </class>
+</hibernate-mapping>
