@@ -3,7 +3,7 @@
 
 <hibernate-mapping>
   <class name="modelo.boleta" table="boleta">
-  <id name="Id_Reserva" column="id_reserva">
+  <id name="Id_Boleta" column="id_boleta">
           <generator class="identity"/>
       </id>
       
