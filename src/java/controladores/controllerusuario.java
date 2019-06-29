@@ -95,7 +95,7 @@ public class controllerusuario extends HttpServlet {
         }else{
             request.setAttribute("editarempresa:v", us);
             try{
-                request.getRequestDispatcher("EditarUsuario.jsp");
+                request.getRequestDispatcher("EditarUsuario.jsp").forward(request, response);
             }catch(ServletException|IOException ex){
                 System.out.println("Error al actualizar "+ex.getMessage());
             }
