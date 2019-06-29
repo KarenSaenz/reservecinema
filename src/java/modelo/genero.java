@@ -16,10 +16,22 @@ public class genero {
     public genero() {
     }
 
-    public genero(int Id_Genero, String Nombre) {
+    public int getId_Genero() {
+        return Id_Genero;
+    }
+
+    public void setId_Genero(int Id_Genero) {
         this.Id_Genero = Id_Genero;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
+
     
 }
 

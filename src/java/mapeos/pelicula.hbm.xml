@@ -8,7 +8,7 @@
       </id>
       
       <property name="Nombre" column="nombre" type="string"/>
-      <property name="Duracion" column="duracion" type="date"/>
+      <property name="Duracion" column="duracion" type="string"/>
       <property name="Hora" column="hora" type="date" />
       <property name="Costo" column="costo" type="int" />
      

@@ -14,7 +14,7 @@ import java.util.Date;
 public class pelicula {
     private int Id_Pelicula;
     private String Nombre;
-    private Date Duracion;
+    private String Duracion;
     private Date Hora;
     private genero Genero_Id_Genero;
     private int Costo;
@@ -38,11 +38,11 @@ public class pelicula {
         this.Nombre = Nombre;
     }
 
-    public Date getDuracion() {
+    public String getDuracion() {
         return Duracion;
     }
 
-    public void setDuracion(Date Duracion) {
+    public void setDuracion(String Duracion) {
         this.Duracion = Duracion;
     }
 

@@ -10,7 +10,7 @@ package modelo;
  * @author aleja9920
  */
 public class boleta {
-     private  int Id_Reserva;
+     private  int Id_Boleta;
      private int Nsillas;
      private int Valor_Unitario;
      private cliente Cliente_Id_Cliente;
@@ -20,12 +20,12 @@ public class boleta {
     public boleta() {
     }
 
-    public int getId_Reserva() {
-        return Id_Reserva;
+    public int getId_Boleta() {
+        return Id_Boleta;
     }
 
-    public void setId_Reserva(int Id_Reserva) {
-        this.Id_Reserva = Id_Reserva;
+    public void setId_Boleta(int Id_Boleta) {
+        this.Id_Boleta = Id_Boleta;
     }
 
     public int getNsillas() {
